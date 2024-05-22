@@ -5,8 +5,9 @@ import java.util.function.Consumer;
 public class NotifyVacancyJob implements Consumer<String> {
 
     @Override
-    public void accept(String s) {
-
+    public void accept(String message) {
+        Vacancy vacancy = new Vacancy(message);
+        System.out.println(vacancy);
     }
 
     @Override

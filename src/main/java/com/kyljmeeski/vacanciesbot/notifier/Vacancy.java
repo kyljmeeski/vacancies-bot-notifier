@@ -76,6 +76,10 @@ public class Vacancy {
         return vacancy.get("link").getAsString();
     }
 
+    public JsonObject json() {
+        return vacancy;
+    }
+
     @Override
     public String toString() {
         return new Gson().toJson(vacancy);

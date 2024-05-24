@@ -4,13 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bff80c0-f4b3-4c6b-b6e3-9901934332f8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="3bff80c0-f4b3-4c6b-b6e3-9901934332f8" name="Changes" comment="feat: create declare the queue &quot;vacancies-to-notify&quot; and start consuming as defined in NotifyVacancyJob">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kyljmeeski/vacanciesbot/notifier/TelegramMessageMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kyljmeeski/vacanciesbot/notifier/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kyljmeeski/vacanciesbot/notifier/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kyljmeeski/vacanciesbot/notifier/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kyljmeeski/vacanciesbot/notifier/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kyljmeeski/vacanciesbot/notifier/NotifyVacancyJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kyljmeeski/vacanciesbot/notifier/NotifyVacancyJob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kyljmeeski/vacanciesbot/notifier/Vacancy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kyljmeeski/vacanciesbot/notifier/Vacancy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,11 +39,40 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Debug",
+    "Notification.DisplayName-DoNotAsk-Vcs Notifications": "VCS notifications",
+    "Notification.DoNotAsk-Vcs Notifications": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "/Users/mac/portfolio/projects/vacancies-bot/notifier/src/main/java/com/kyljmeeski/vacanciesbot/notifier/Main.java"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.kyljmeeski.vacanciesbot.notifier" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kyljmeeski.vacanciesbot.notifier.Main" />
+      <module name="notifier" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kyljmeeski.vacanciesbot.notifier.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -40,6 +82,82 @@
       <option name="presentableId" value="Default" />
       <updated>1720331908192</updated>
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <option name="closed" value="true" />
+      <created>1720331916377</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1720331916378</updated>
+    </task>
+    <task id="LOCAL-00002" summary="dep: add gson, postgresql, rabbitmq-wrapper, plain-https">
+      <option name="closed" value="true" />
+      <created>1720332088216</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1720332088216</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: establish connection to rabbitmq">
+      <option name="closed" value="true" />
+      <created>1720332191734</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1720332191734</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: declare a queue">
+      <option name="closed" value="true" />
+      <created>1720332239846</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1720332239846</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: create NotifyVacancyJob: it accepts message from &quot;vacancies-to-notify&quot; queue">
+      <option name="closed" value="true" />
+      <created>1720332330368</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1720332330368</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: create Vacancy">
+      <option name="closed" value="true" />
+      <created>1720332836797</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1720332836797</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: create read message as a vacancy and print it">
+      <option name="closed" value="true" />
+      <created>1720332855328</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1720332855328</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: create declare the queue &quot;vacancies-to-notify&quot; and start consuming as defined in NotifyVacancyJob">
+      <option name="closed" value="true" />
+      <created>1720332904381</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1720332904381</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <MESSAGE value="dep: add gson, postgresql, rabbitmq-wrapper, plain-https" />
+    <MESSAGE value="feat: establish connection to rabbitmq" />
+    <MESSAGE value="feat: declare a queue" />
+    <MESSAGE value="feat: create NotifyVacancyJob: it accepts message from &quot;vacancies-to-notify&quot; queue" />
+    <MESSAGE value="feat: create Vacancy" />
+    <MESSAGE value="feat: create read message as a vacancy and print it" />
+    <MESSAGE value="feat: create declare the queue &quot;vacancies-to-notify&quot; and start consuming as defined in NotifyVacancyJob" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: create declare the queue &quot;vacancies-to-notify&quot; and start consuming as defined in NotifyVacancyJob" />
   </component>
 </project>

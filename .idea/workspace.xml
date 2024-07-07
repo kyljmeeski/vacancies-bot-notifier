@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bff80c0-f4b3-4c6b-b6e3-9901934332f8" name="Changes" comment="feat: create declare the queue &quot;vacancies-to-notify&quot; and start consuming as defined in NotifyVacancyJob">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kyljmeeski/vacanciesbot/notifier/TelegramMessageMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kyljmeeski/vacanciesbot/notifier/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kyljmeeski/vacanciesbot/notifier/Users.java" afterDir="false" />
+    <list default="true" id="3bff80c0-f4b3-4c6b-b6e3-9901934332f8" name="Changes" comment="update pom.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kyljmeeski/vacanciesbot/notifier/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kyljmeeski/vacanciesbot/notifier/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kyljmeeski/vacanciesbot/notifier/NotifyVacancyJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kyljmeeski/vacanciesbot/notifier/NotifyVacancyJob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kyljmeeski/vacanciesbot/notifier/Vacancy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kyljmeeski/vacanciesbot/notifier/Vacancy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +22,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "studying-kyljmeeski"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:kyljmeeski/vacancies-bot-notifier.git",
+    "accountId": "b8f4d3ef-a48f-4261-a233-aaa28f84f5c0"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2iuE9LNuY5oggxWrlWPLoIZA3MQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -39,7 +45,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Debug",
+    "Application.Main.executor": "Run",
     "Notification.DisplayName-DoNotAsk-Vcs Notifications": "VCS notifications",
     "Notification.DoNotAsk-Vcs Notifications": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -148,6 +154,17 @@
     </task>
     <option name="localTasksCounter" value="9" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
